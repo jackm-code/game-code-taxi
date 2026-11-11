@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Opening Fare POC</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+    body { font-family: Georgia, 'Times New Roman', serif; color: #cfc4ae; user-select: none; -webkit-user-select: none; touch-action: none; }
+    canvas { display: block; width: 100%; height: 100%; }
+    .layer { position: fixed; inset: 0; pointer-events: none; }
+    #fade { background: #000; opacity: 1; }
+    #sub {
+      position: fixed; left: 50%; bottom: 9%; transform: translateX(-50%); width: min(80%, 760px);
+      text-align: center; font-size: clamp(16px, 2.3vw, 25px); line-height: 1.4; letter-spacing: 0.01em;
+      text-shadow: 0 0 6px #000, 0 2px 3px #000; opacity: 0; transition: opacity 0.7s; pointer-events: none;
+    }
+    #hint {
+      position: fixed; left: 50%; top: 6%; transform: translateX(-50%); text-align: center; pointer-events: none;
+      font: 14px/1.5 'Courier New', monospace; letter-spacing: 0.12em; text-transform: uppercase; color: #b9ad94;
+      text-shadow: 0 0 5px #000, 0 1px 2px #000; opacity: 0; transition: opacity 0.6s; width: min(90%, 620px);
+    }
+    #arrow {
+      position: fixed; left: 50%; top: 13%; width: 54px; height: 54px; margin-left: -27px; pointer-events: none;
+      opacity: 0; transition: opacity 0.8s; filter: drop-shadow(0 0 5px rgba(0,0,0,0.9));
+    }
+    #arrow svg { width: 100%; height: 100%; display: block; }
+    #tag {
+      position: fixed; right: 10px; bottom: 8px; font: 10px 'Courier New', monospace; letter-spacing: 0.1em;
+      color: #5a5346; opacity: 0; transition: opacity 0.6s; pointer-events: none;
+    }
+    .card { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 18px; padding: 24px; }
+    .card h1 { font-weight: normal; font-size: clamp(20px, 3.4vw, 34px); letter-spacing: 0.3em; margin: 0; text-transform: uppercase; }
+    .card p { margin: 0; font: 13px/1.9 'Courier New', monospace; letter-spacing: 0.1em; color: #8c8372; text-transform: uppercase; }
+    .card .go { color: #cfc4ae; margin-top: 14px; }
+    #start { pointer-events: auto; cursor: pointer; background: #000; }
+    #end { opacity: 0; transition: opacity 2s; }
+    #touch { display: none; }
+    #touch button {
+      position: fixed; bottom: 18px; width: 62px; height: 62px; border-radius: 50%; border: 1px solid #6b6252;
+      background: rgba(20, 18, 14, 0.45); color: #b9ad94; font-size: 22px; pointer-events: auto; touch-action: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="arrow"><svg viewBox="-12 -12 24 24"><path d="M0 -10 L8 6 L0 2 L-8 6 Z" fill="#d8a23c" stroke="#1a1408" stroke-width="1"/></svg></div>
+  <div id="hint"></div>
+  <div id="sub"></div>
+  <div id="tag">PLACEHOLDER DIALOGUE</div>
+  <div id="touch">
+    <button data-k="left" style="left:18px">&#9664;</button>
+    <button data-k="right" style="left:92px">&#9654;</button>
+    <button data-k="back" style="right:92px">&#9660;</button>
+    <button data-k="fwd" style="right:18px">&#9650;</button>
+  </div>
+  <div id="fade" class="layer"></div>
+  <div id="end" class="layer card">
+    <h1>End of proof of concept</h1>
+    <p>The opening fare<br /><span class="go">Press R to drive it again</span></p>
+  </div>
+  <div id="start" class="layer card">
+    <h1>The Opening Fare</h1>
+    <p>Proof of concept &middot; working title TBD</p>
+    <p>W / S &nbsp; accelerate / brake<br />A / D &nbsp; steer<br />Mouse &nbsp; look around</p>
+    <p class="go">Click to begin</p>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
