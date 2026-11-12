@@ -17,6 +17,14 @@ Open `index.html` in a desktop browser (needs an internet connection the first t
 
 Three.js in a single HTML file. It runs from a link with nothing to install, the whole prototype is one readable file, and it is quick to change while the loop is being tuned. Revisit before the full build, as `00-README.md` says.
 
+## Graphics
+
+- Every streetlamp, shopfront, neon sign and landmark is a real light on the road, the buildings and the cab. Station Road is lit cool white and Market Street warm white; the rest are sodium amber.
+- The wet road mirrors the city, with puddles, and the image is finished with bloom and film-style tone mapping.
+- The driver's seat is a modelled interior: backlit instruments, steering wheel, taxi meter, dispatch radio, rear-view mirror, and rain on the windscreen cleared by the wipers. Streetlight sweeps across the dash through the windows, shadowed by the roof and pillars.
+- Speed, fuel, clock and fare are read from the dashboard. The outside view (C) shows them as a small overlay instead.
+- The game lowers its render resolution on its own if the frame rate drops.
+
 ## What is in it
 
 1. Fade in at 10:00 PM on Canal Street, in rain, under sodium streetlights.
@@ -35,7 +43,7 @@ All numbers sit in the `CFG` block at the top of the script in `index.html`.
 - Fare: £2.00 flag fall, £3.00 a mile, 50p a game minute.
 - Fuel: 25 mpg base, £2.40 a gallon, 10 gallon tank, starting half full.
 - Distance is compressed 20 times, to match the clock (one real minute is 20 game minutes).
-- The city is a 6 by 5 grid of invented street names with six landmarks. Buildings, the cab and the passenger are blockout shapes.
+- The city is a 6 by 5 grid of invented street names with six landmarks. Buildings, shops, the cab and the passenger are simple shapes with generated textures.
 - Sound is synthesised rain, engine and meter clicks.
 
 ## Not built (as the brief says)
