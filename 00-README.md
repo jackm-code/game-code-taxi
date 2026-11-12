@@ -19,7 +19,7 @@
 | `04-mechanics.md` | Driving, navigation, fuel, money, night length, crashes |
 | `05-world.md` | 1990s UK setting, the city, the cab finance |
 | `06-open-questions.md` | Decisions still needed |
-| `07-poc-brief.md` | Brief for the first taxi-loop prototype (Proposed, for Claude Code) |
+| `07-poc-brief.md` | Brief for the first taxi-loop prototype (Confirmed, for Claude Code) |
 | `08-gameplay-loop.md` | Fare, night and career loops |
 | `09-progression.md` | XP, level pacing, skill tree rules, Cab items |
 | `archive/horror-story/` | The old horror story files, including the old loan-shark POC brief |

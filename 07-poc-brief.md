@@ -1,6 +1,6 @@
 # POC Brief: First Taxi Loop
 
-**Status:** [Proposed] Awaiting Jack's confirmation. Replaces the old loan-shark opening brief, which is in `archive/horror-story/07-poc-brief.md`.
+**Status:** [Confirmed] Jack confirmed this brief on 2026-11-12. Replaces the old loan-shark opening brief, which is in `archive/horror-story/07-poc-brief.md`.
 
 **Goal:** A playable prototype of one short night with a single street-hail fare, so we can feel the core of the game: driving by road signs and a paper map, a taxi meter, fuel drain and an end-of-night tally. Choose the engine and project setup yourself and explain the choice briefly.
 
