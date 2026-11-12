@@ -2,46 +2,44 @@
 
 ## Logline [Proposed]
 
-On a 1990s night shift, a black cab driver hauls strangers and organs through a city that is slowly coming apart, working off a debt he can't escape. The final emergency call turns out to be his own.
+On a 1990s night shift, a black cab driver pays off the finance on their cab one fare at a time, reading road signs and a paper map through a rain-slicked city, and trying to make a little more than last night.
 
 ## Genre [Confirmed]
 
-Horror driving game. The vehicle is a trap, not an escape pod.
+A calm, addictive, multi-night taxi simulator. The horror and story layer is shelved as a future development (see `archive/horror-story/`). The gameplay loop comes first; story is built over the top later, only once the game is something people want to play.
 
-## Chosen direction [Confirmed]
+## The player [Confirmed]
 
-Direction C: Enclosed / Vehicle-as-Dungeon.
-- Two playable perspectives: a night black cab driver (the road) and an ambulance driver (the rig). Both are playable as the driver of their vehicle.
-- The cab driver's job covers both passengers and packages, including organ transport.
+The player is the driver, an unnamed "entity" with no set character or backstory for now. No specific stories at this stage.
 
-## Setting in one line [Confirmed]
+## Tone [Confirmed]
 
-1990s UK. A fictional, unnamed city that feels like London. Black cab and period UK ambulance.
+Calm, in the style of Euro Truck Simulator 2. Relaxed driving, no tension built into the loop.
+
+## Style references [Confirmed]
+
+Small "simulator" games with a strong one-more-go pull: Leaf It Alone and A Game About Chopping Trees. Research on why loops like these work is in the Claude Doc "What Makes a Game Loop Addictive: Research for the Taxi Game".
 
 ## Core hook [Confirmed]
 
-- **The cab driver (Mark)** sits in an open, exposed cabin. Passengers sit directly behind him and can be seen in the rear-view mirror. He can talk to them.
-- **The ambulance driver (Daniel)** works in a closed rig. A sliding partition is the way to see and speak to the medic and patient in the back.
-- The two storylines converge when Mark becomes the final patient in Daniel's ambulance.
+- Money earned pays off the finance on the player's cab. The balance is visible.
+- XP earned unlocks skills (see `09-progression.md`).
+- Running costs (fuel) take a bite out of every shift.
+- No GPS. The player navigates by road signs and a paper map.
 
-## Length and scope [Confirmed]
+## Setting in one line [Confirmed]
 
-- One night, with one phase per shift.
-- Target playtime is about 1 to 2 hours. It can be extended later if the tension needs it.
-- This is a first game project, made for fun at this stage.
+1990s UK. A fictional, unnamed city that feels like London. Black cab.
 
-## Tone [Proposed]
+## Length and scope
 
-Slow burn. The night starts mundane and slightly wrong, then degrades into overt horror. Early scares come from small wrongness in the cabin and on the glass. Large set pieces come late. The opening loan shark fare is a threat, not a full scare.
+- One night is a placeholder 15 minutes of play. [Confirmed]
+- About 15 nights to pay off the cab, a starting point to tune after playtesting. [Confirmed]
+- This is a first game project, made for fun at this stage. [Confirmed]
 
 ## Design pillars [Proposed]
 
-1. **Intimacy as dread.** The threat is in the seat behind you or on the other side of the glass.
-2. **The mundane made wrong.** Routine jobs (fares, clinic runs, car crashes) carry small uncanny details that grow.
-3. **Blurred job lines.** Fares, deliveries and emergencies merge as the night goes on.
-4. **Two pressures, one city.** The driver handles the quiet horror; the ambulance crew handles the urgent one.
-
-## Tone references [Proposed]
-
-- *Taxi Driver* for the lonely night-shift driver
-- Cosmic horror for the sense that the city is wrong in ways no one explains
+1. **Always something close.** A visible finance balance and XP bar mean the next reward is never far away.
+2. **Calm competence.** The player gets better at the job through skill and unlocks, not through pressure.
+3. **Reading the city.** Navigation by sign and map is the main skill the player learns.
+4. **Every night ends with a tally.** Earnings, fuel, finance paid, XP.

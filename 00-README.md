@@ -1,33 +1,35 @@
-# Horror Driving Game: Project Knowledge Base
+# Night Fare: Project Knowledge Base
 
-**Working title:** TBD
-**Stage:** Story development (pre-production). The basics are settled; the storyline workflow is next. Proof of concept in progress.
-**Last updated:** 2026-11-11
-**Engine:** [Confirmed] Not chosen by Jack. Claude Code selects the engine for the opening-fare POC. Revisit the choice before the full build.
-**Build tooling:** Claude Code is planned for the build stage.
+**Working title:** Night Fare [Confirmed], a work in progress and open to change. (The repo is game-code-taxi.)
+**Stage:** Gameplay loop design. The horror story is shelved and archived as a future development.
+**Last updated:** 2026-11-12
+**Engine:** Not chosen. Claude Code will choose for the proof of concept. Revisit before the full build.
 
 ## How to use this knowledge base
 
-- Upload every file in this folder to a Claude Project's knowledge.
-- Each statement is tagged:
-  - **[Confirmed]**: decided by Jack. This is canon.
-  - **[Proposed]**: drafted by Claude to fill a gap. Not yet approved. Treat as a suggestion.
-  - **[Open]**: an unanswered question. See `06-open-questions.md`.
-- When a Proposed item is approved, change its tag to Confirmed. When a question is answered, move the answer into the right file and remove it from the open list.
-- Keep one topic per file so later sessions can load only what they need.
+- Each statement is tagged **[Confirmed]** (Jack decided it, canon), **[Proposed]** (Claude drafted it, not canon) or **[Open]** (unanswered, see `06-open-questions.md`).
+- Only Jack promotes Proposed to Confirmed.
+- One topic per file.
 
 ## File index
 
 | File | Contents |
 |---|---|
-| `01-pitch.md` | Logline, genre, tone, the core hook, length |
-| `02-characters.md` | Mark (cab), Daniel (ambulance), Andrew (medic), the loan shark, dispatchers, other NPCs |
-| `03-structure.md` | The opening, the night's three phases, perspective switches, the ending |
-| `04-mechanics.md` | Cab and ambulance gameplay systems |
-| `05-world.md` | 1990s UK setting, the fictional city, the collapse, radio, navigation |
+| `01-pitch.md` | Logline, genre, tone, hook, scope |
+| `04-mechanics.md` | Driving, navigation, fuel, money, night length, crashes |
+| `05-world.md` | 1990s UK setting, the city, the cab finance |
 | `06-open-questions.md` | Decisions still needed |
-| `07-poc-brief.md` | Brief for the opening-fare proof of concept (Claude Code) |
+| `07-poc-brief.md` | Brief for the first taxi-loop prototype (Proposed, for Claude Code) |
+| `08-gameplay-loop.md` | Fare, night and career loops |
+| `09-progression.md` | XP, level pacing, skill tree rules, Cab items |
+| `archive/horror-story/` | The old horror story files, including the old loan-shark POC brief |
 
-## Build-stage notes (not yet started)
+## Linked docs (Claude Docs)
 
-When the build stage starts, this knowledge base will need technical specs: input, camera, vehicle handling, audio, trigger events, and state tracking for the switch points. These are deliberately not defined yet. The POC brief is the first build-facing document.
+- What Makes a Game Loop Addictive: Research for the Taxi Game
+- Skill Tree: Taxi Game
+
+## Notes
+
+- Files 02 and 03 (characters and structure) are archived, since they are all horror story.
+- The player is an unnamed driver. Mark and the other characters are archived.

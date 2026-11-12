@@ -1,44 +1,60 @@
 # Mechanics
 
-## Cab (The Road)
+Described in plain language only. No technical design yet.
 
-**Confirmed**
-- Mark drives a black cab.
-- View: windshield, plus an exposed rear-view mirror that shows the passengers.
-- Passengers can be spoken to. After the opening fare, these conversations are optional. The opening loan shark fare is scripted and non-interactive: the player cannot respond.
-- Mark then drives each passenger to their destination.
-- Next pickups and deliveries are called in over the radio by Mark's dispatcher.
-- Navigation relies on road signs and a physical street map. No GPS or digital overlay.
+## Driving and navigation [Confirmed]
 
-**Proposed**
-- A paper street atlas rests on the passenger seat. The player glances down at it, then looks up at the road signs through rain or fog.
-- Manual controls: headlights, wipers, interior dome light, radio dial.
-- Dome light trade-off: switching it on makes the map easier to read, but makes it easier for the passengers to see the driver.
-- "Rules of the cabin": behaviours that keep passengers calm or safe. For example, keeping the interior light off, not agreeing to certain requests, or tuning to a particular station. Exact rules Open.
+- The player drives a black cab.
+- No GPS. Road signs and a paper street map are the navigation.
+- Next jobs come in over the radio from the dispatcher.
 
-## Ambulance (The Rig)
+## Fares and pay
 
-**Confirmed**
-- Daniel drives the ambulance. Andrew, an NPC medic, is in the back.
-- A sliding door between the cab and the back. The player must open and close it. With the door closed, the view of the back is restricted.
-- Daniel can talk to Andrew through the partition.
-- Calls come in over the radio from Daniel's dispatcher, the same way as Mark's jobs.
+- Pay comes from a taxi meter that ticks up with distance and time. [Confirmed]
+- The meter works with the fuel system, since longer trips cost more fuel but earn more. [Confirmed]
+- Refuelling with a passenger on board reduces the fare. [Confirmed]
 
-**Proposed**
-- Driving to calls on time, with timed routes.
-- Patients react when the door opens. Their behaviour gets more unsettling as the night goes on.
-- Andrew reacts to what is happening in the back, and his dialogue through the partition changes as the night goes on.
-- Triage decisions when several patients need help. (Note: Daniel is now the driver, so these may need to be Andrew's decisions relayed to the player. Open.)
+## Tips [Confirmed]
 
-## Shared systems
+- A smooth ride earns a small tip.
+- Taking the direct route earns a bigger tip, because route-finding is the main skill in a game with no GPS.
+- A longer route still pays by the meter, but earns no tip.
 
-- **Confirmed:** Switching between perspectives is controlled by the story, not the player (see `03-structure.md`).
-- **Proposed:** The radio is the main story driver. It carries pickups, deliveries, organ time windows and citywide emergency alerts.
-- **Proposed:** Visibility is limited by night, rain and fog. Headlights and wipers matter. Streetlights failing across the night affects what the player can see.
+## Kinds of fare [Confirmed]
+
+- **Street hail:** Quick, short fares picked up from the kerb.
+- **Radio job:** Booked pickups from the dispatcher, with an address to find on the map.
+- **Long haul:** An airport or out-of-town run that pays well but burns a lot of fuel.
+
+## Fuel and running costs [Confirmed]
+
+- Running costs come first, and fuel is the only running cost.
+- A simple "mpg" system: fuel use depends on driving speed, driving style and distance travelled.
+- The player can stop to refuel while carrying a passenger, but the fare pays less if they do.
+- There are no repairs.
+
+## Money [Confirmed]
+
+Earnings pay off the £10,000 finance on the player's cab. The balance is visible.
+
+## Night length [Confirmed]
+
+- The shift starts at 10pm and ends at 3am, five in-game hours.
+- A night is a placeholder 15 minutes of play on a compressed in-game clock, so one real minute is 20 game minutes.
+- Last call is about 2:45am. A fare in progress can be finished.
+
+## Failing a night and crashes [Confirmed]
+
+- A night cannot be failed. A bad night just earns less.
+- Running out of fuel costs a small tow fee and ends the shift early.
+- A crash causes a short stall and a small fine, docked from that fare's pay. The fare carries on.
+
+## Passengers [Proposed]
+
+Optional conversations with passengers, seen in the rear-view mirror, as flavour. They do not affect the loop.
 
 ## Still to define [Open]
 
-- Fail states (what happens if the driver crashes, or a patient dies), including what happens to the pledged cab
-- Whether there is any scoring, money or progression system
-- How the player's answers to passengers affect the story, if they do
-- How Daniel and Andrew's conversations through the partition work in play
+- Fine and tow fee amounts
+- Tip amounts and how "direct route" is judged
+- Whether refuelling cost scales with fuel price or is a flat rate
