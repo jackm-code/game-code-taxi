@@ -6,12 +6,18 @@ Playable prototype of `07-poc-brief.md`: one short night with a single street-ha
 
 Open `index.html` in a desktop browser (needs an internet connection the first time, to load Three.js and fonts from a CDN).
 
-| Key | Action |
-|---|---|
-| W / S (or up / down) | Accelerate / brake, then reverse |
-| A / D (or left / right) | Steer |
-| M | Open or close the paper map |
-| C | Driver's seat or outside view |
+| Keyboard and mouse | Controller | Action |
+|---|---|---|
+| W / S (or up / down) | RT / LT | Accelerate / brake, then reverse |
+| A / D (or left / right) | Left stick | Steer |
+| Drag the mouse | Right stick | Look around |
+| V | B | Look straight ahead again |
+| Q / E | LB / RB | Left / right indicator (press again to cancel) |
+| M | Y | Open or close the paper map |
+| C | X | Driver's seat or outside view |
+| Click the button | A or Start | Start the shift, drive again |
+
+Controller buttons use the standard Xbox layout. The look direction drifts back to straight ahead after a few seconds of driving. Indicators cancel themselves after a turn.
 
 ## Engine choice
 
@@ -23,6 +29,8 @@ Three.js in a single HTML file. It runs from a link with nothing to install, the
 - The wet road mirrors the city, with puddles, and the image is finished with bloom and film-style tone mapping.
 - The driver's seat is a modelled interior: backlit instruments, steering wheel, taxi meter, dispatch radio, rear-view mirror, and rain on the windscreen cleared by the wipers. Streetlight sweeps across the dash through the windows, shadowed by the roof and pillars.
 - Speed, fuel, clock and fare are read from the dashboard. The outside view (C) shows them as a small overlay instead.
+- Six junctions have working traffic lights on the UK sequence, with stop lines. They light the road, but nothing happens if you run a red.
+- Cars are parked along the kerbs. Hitting one just slows the cab, like a building.
 - The game lowers its render resolution on its own if the frame rate drops.
 
 ## What is in it
