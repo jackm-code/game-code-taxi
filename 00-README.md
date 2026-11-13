@@ -1,9 +1,9 @@
 # Night Fare: Project Knowledge Base
 
 **Working title:** Night Fare [Confirmed], a work in progress and open to change. (The repo is game-code-taxi.)
-**Stage:** Gameplay loop design. The horror story is shelved and archived as a future development.
-**Last updated:** 2026-11-12
-**Engine:** Not chosen. Claude Code will choose for the proof of concept. Revisit before the full build.
+**Stage:** Planning the Steam demo. A browser proof of concept is built (`poc/`). The horror story is shelved and archived as a future development.
+**Last updated:** 2026-11-13
+**Engine:** Godot 4 for the demo and full game [Confirmed]. The proof of concept is a browser build (Three.js).
 
 ## How to use this knowledge base
 
@@ -22,6 +22,8 @@
 | `07-poc-brief.md` | Brief for the first taxi-loop prototype (Confirmed, for Claude Code) |
 | `08-gameplay-loop.md` | Fare, night and career loops |
 | `09-progression.md` | XP, level pacing, skill tree rules, Cab items |
+| `10-demo-plan.md` | Plan for a Steam demo: research, scope, free assets, phases |
+| `poc/` | The playable browser proof of concept |
 | `archive/horror-story/` | The old horror story files, including the old loan-shark POC brief |
 
 ## Linked docs (Claude Docs)
