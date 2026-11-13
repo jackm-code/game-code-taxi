@@ -23,6 +23,7 @@
 | `08-gameplay-loop.md` | Fare, night and career loops |
 | `09-progression.md` | XP, level pacing, skill tree rules, Cab items |
 | `10-demo-plan.md` | Plan for a Steam demo: research, scope, free assets, phases |
+| `11-backlog.md` | Demo work in small chunks, with requirements and status |
 | `poc/` | The playable browser proof of concept |
 | `archive/horror-story/` | The old horror story files, including the old loan-shark POC brief |
 

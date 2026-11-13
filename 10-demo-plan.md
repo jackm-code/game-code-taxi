@@ -105,11 +105,14 @@ Each phase ends with something playable.
 - After phase 5: a 30 to 60 second trailer that opens on the hook.
 - Before choosing a Next Fest: a Discord or mailing list, and a list of cozy and sim content creators.
 
-## How the work is split [Proposed]
+## How the work is split [Confirmed]
 
-- Claude writes the Godot project as code and text scene files, and tests game logic where it can.
-- Jack runs it in the Godot editor on a local machine to see it and judge the feel.
-- Feel (steering, lighting, pacing) is tuned in a loop: Jack plays and describes what feels off, Claude adjusts.
+- **Claude:** everything that is code or text. Project structure, scripts and scenes, all game systems, lighting and shaders, and the city built by a script from a layout file.
+- **Jack:** everything that needs eyes, hands or taste. Installing Godot, downloading agreed asset packs, playing each build and sending notes and screenshots, and the art calls.
+- **Order:** logic first with placeholder shapes, assets later. The driving decides street sizes.
+- **Assets:** one family of packs so the style is consistent. The black cab is built separately.
+- **The loop:** Claude pushes a build, Jack plays it in Godot, Jack sends notes, Claude adjusts.
+- **Small chunks:** work is broken into session-sized chunks in `11-backlog.md`, each committed and pushed when done.
 
 ## Sources
 
